@@ -1,0 +1,155 @@
+{% macro show_card(card) %}
+<div class="banner-container-box">
+    <div class="banner-container">
+        <div class="banner-img">
+            <a href="{{ card['url'] }}">
+                <picture>
+                    <source type="image/webp" srcset="{{ card['img_url'] }}">
+                    <source type="image/jpeg" srcset="{{ card['img_url'] }}">
+                    <img src="{{ card['img_url'] }}" class="w100"
+                    alt="{{ card['img_alt'] }}">
+                </picture>
+            </a>
+            <div class="banner-img-hover-text banner-img-hover-text--centered">
+                <a href="{{ card['url'] }}">
+                    {{ card['hover_text'] }}
+                </a>
+            </div>
+        </div>
+        <div class="banner-bottom">
+            <div class="banner-text">
+                <a class="" href="{{ card['url'] }}">
+                    {{ card['title'] }}
+                </a>
+            </div>
+            <div class="banner-additional-info">
+                <div class="banner-action-button">
+                    <a class="" href="{{ card['url'] }}">
+                        {{ card['details'] }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{%endmacro %}
+{% macro show_cards(cards) %}
+    {% for card in cards %}
+
+        {{ show_card(card) }}
+
+    {% endfor %}
+
+
+{% endmacro %}
+
+{% macro top_menu_macro(lang) %}
+<header class="page-header">
+        <nav class="topmenu2">
+            <div id="menu"><!-- div topmenu open -->
+                <a>
+                    <span class="width_bcd">Меню</span>
+                    <span class="hamburger_icon width_a">&#8801;</span>
+                </a>
+            </div>
+            <div id="static01">
+                <a href="/Finland/holidays/">Праздники</a>
+            </div>
+            <div id="static02" class="width_a2">
+                <a href="/Finland/travel/">Путешествия</a>
+            </div>
+            <div class="inline width_cd">
+                <div id="static03">
+                    <a href="/fly/">
+                        &#9992;
+                    </a>
+                </div>
+
+
+                <div id="static04">
+                    <a href="/Finland/news/">Новости</a>
+                </div>
+                <div id="static05">
+                    <a href="/Finland/edu/">Образование</a>
+                </div>
+
+                <div id="static07">
+                    <a href="/Finland/fests">Фестивали</a>
+                </div>
+                <div id="static08">
+                    <a href="/leveltravel/">Туры от LT</a>
+                </div>
+            </div>
+            <div id="dropdownid" class="dropdown1">
+                <div class="hiddenbox1">
+                    <a id="item1" href="/">
+                        Главная
+                    </a>
+                </div>
+                <div class="hiddenbox1">
+                    <a id="item2" href="/Finland/travel/">
+                        Путешествия
+                    </a>
+                </div>
+                <div class="hiddenbox1">
+                    <a id="item3" href="/Finland/news/">
+                        Новости
+                    </a>
+                </div>
+                <div class="hiddenbox1">
+                    <a id="item4" href="/Finland/edu/">
+                        Образование
+                    </a>
+                </div>
+                <div class="hiddenbox1">
+                    <a id="item5" href="/Finland/life/">
+                        Жизнь в
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+   <a href="/">
+       <img src="{{ url_for('static', filename='img/banners/FinlandTopBanner.jpg')}}" alt="www.HeiHei.ru" class="width100 topimg">
+   </a>
+<div id="container">
+<div class="lang_panel">
+    <div class="lang_panel--blocks">
+        <div class="lang_panel--flag">
+            <a href="/">
+                <img src="{{ url_for('static', filename='img/flags/Flag_of_Russia.svg.png')}}" alt="Флаг России">
+            </a>
+        </div>
+        <div class="lang_panel--flag">
+            <a href="/en/">
+                <img src="{{ url_for('static', filename='img/flags/Flag_of_the_United_Kingdom.svg.png')}}" alt="Флаг Англии">
+            </a>
+        </div>
+        <div class="lang_panel--flag">
+            <a href="/fi/">
+                <img src="{{ url_for('static', filename='img/flags/Flag_of_Finland.svg.png')}}" alt="Флаг Финляндии">
+            </a>
+        </div>
+    </div>
+    <div class="lang_panel--blocks">
+        <div class="lang_panel--time">
+         В Петербурге <b>18:00:48 </b>
+        </div>    <div class="lang_panel--time"> В Хельсинки&nbsp; <b>18:00:48</b>
+        </div>
+        <div class="lang_panel--time">
+
+         В Стокгольме <b>17:00:48</b>
+       </div>
+    </div>
+    <div class="lang_panel--blocks">
+    <input type="button" value="Обновить (F5)" onClick="window.location.href=window.location.href">
+    <!-- button type="submit"  onClick="refreshPage()">Обновить</button -->
+    </div>
+</div>
+<!--script>
+function refreshPage(){window.location.reload();}
+</script -->
+<!-- 030_lang_panel_ends-->
+<script src="/php_includes/topmenu.js"></script>
+  </div>
+{% endmacro %}

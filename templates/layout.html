@@ -1,0 +1,62 @@
+{% from '_macros.html' import show_card, show_cards,top_menu_macro with context %}
+<!DOCTYPE html>
+<html lang="{% block lang %}{% endblock %}">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/heihei_style.css')}}">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/{{country}}/country_specific_style.css')}}">
+<link rel="icon" type="image/png" href="{{url_for('static', filename='img/favicons/{{ favicon_filename }}')}}"/>
+    {% if title %}
+        <title>
+            {{ title }}
+        </title>
+    {% else %}
+        <title>
+            HeiHei.ru
+        </title>
+    {% endif %}
+</title>
+<meta name="keywords" content="{% block keywords %}{% endblock %}">
+<meta name="yandex-verification" content="c8092a88f9f19eb0" />
+<meta name="yandex-verification" content="79c98ca126a28ae0" />
+<meta name="verify-admitad" content="d74ba13fac" />
+<meta name="description" content="{% block description %}{% endblock %}">
+
+</head><body>
+    <div id="start"></div>
+    {% block top_menu %}
+    {% endblock %}
+    {% block content %}
+    {% endblock %}
+<div class="wrapper m-top5rem">
+    <div class="p1">
+        <div class="runningline"></div>
+        <div class="footermenu">
+            <a href="/">Главная</a>
+            <a href="/Finland/travel/">В Финляндию</a>
+
+            <a href="/Finland/">О стране</a>
+            <a href="/contacts/">Контакты</a>
+            <a href="https://vk.com/heiheiru">
+                <img src="/img/vk40.jpg" class="footericon" alt="Группа HeiHei.ru вконтакте">
+                    vk.com<img src="/img/vk40.jpg" class="footericon" alt="Группа HeiHei.ru вконтакте"></a>
+            <a href="/sitemap.php">&#127760;</a>
+        </div>
+        <div class="width_a"><br><br><br><br><br><br></div>
+        <div class="runningline"></div>
+        <div class="rightdiv50">
+            <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+            <script src="//yastatic.net/share2/share.js"></script>
+            <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir,gplus,twitter,reddit,lj,viber,whatsapp,skype,telegram">
+            </div>
+        </div>
+        &nbsp;&#169; HeiHei.Ru 2020 <span class="width_a"><br>&nbsp;</span>&#9993; info&#64;heihei.ru<br><br>
+        <span class="width_bcd">.</span>
+        <span class="width_cd">.</span>
+        <span class="width_d">.</span>
+        <div class="width_a"><br></div>
+    </div>
+</div>
+</body>
+</html>

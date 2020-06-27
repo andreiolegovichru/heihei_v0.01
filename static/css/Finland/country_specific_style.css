@@ -1,0 +1,104 @@
+/* HeiHei.ru Finland */
+/* #002f6c; - finnish flag blue */
+.topmenu2 
+{background:#002f6c;}
+
+.topmenu2 a {color:#fff;text-decoration:none;border:0;
+background:#002f6c;}
+.topmenu2 a:HOVER{color:#002f6c;background:#f5ae6c;}
+.topmenu2 a:visted{color:#31b999;}
+
+#menu {background:#ffffff;color:#002f6c;}
+#menu a{background:#ffffff;color:#002f6c;}
+#menu a:HOVER{background:#002f6c;color:#ffffff;}
+#menu:HOVER{color:#ffffff;background:#002f6c;}
+
+#dropdownid{background:#002f6c;/*-цвет фона выпадающего вниз блока */}
+
+
+.totopbutton {
+    color:#002f6c;
+    border:#ccc;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 4px #002f6c;}
+
+.totopbutton:HOVER {
+background-color:#002f6c;
+color:#ffffff;}
+
+.address div {border:1px;border-color:#002f6c;}
+.address a {color:#002f6c;}
+
+.address a:first-child {margin:10px 10px 10px 25px;}
+.address a:HOVER {color:#002868;}
+.address a:visted {color:#31b999;}
+.address a b {color:#002f6c;}
+
+
+.tab11 th,.tab12 th,.tab15 th
+{background:#002f6c;color:#ffffff;font-weight:normal;}
+.tab11 th, .tab11 td,.tab12 td {
+    border-style:solid;
+    border-width:0 1px 1px 0;border-color: white;}
+.tab11 th,.tab11 td,.tab12 td,.tab12 th {text-align:left;}
+.tab11 th a {color:#fff; }
+.tab11 th a:visited {color:#fff; }
+.tab11 th:first-child {border-top-left-radius:0;}
+.tab11 th:last-child {border-top-right-radius:0;border-right:none;}
+.tab11 td,.tab12 td {background:#e6e6e6;} 
+.tab11 tr:last-child td:first-child {border-radius: 0 0 0 0  ;}
+.tab11 tr:last-child td:last-child {border-radius: 0 0 0  0;}
+.tab11 tr td:last-child {border-right: none;}
+.tab11 a,.tab12 a{text-decoration:none;color:#002f6c; }
+.tab11 a:link,.tab12:link a{color:blue;  }
+.tab11 a:visited,.tab12 a:visited{color:#002f6c;}
+.tab11 a:HOVER,.tab12 a:HOVER{color:#000;}
+.tab11 a:active,.tab12 a:active{color:#502542;}
+.tab11 h2, .tab11 h3 {color:#ccc;}
+.tab11 tfoot td{background:#ccc;border-radius:0;padding:1px;font-size:16px;}
+
+/*.tab12 tr {border-bottom: 1px solid grey;}*/
+.tab12 tr:nth-child(even) {
+    background-color:#F0F8FF;
+    
+} 
+
+
+.tab15--evenRows tr:nth-child(even) td {
+    border-bottom:2px solid lightblue;
+    background-color: rgb(250, 189, 0);
+    background-color: rgba(250, 189, 0, 0.1);
+} 
+.tab15--evenRows tr:nth-child(odd) {
+    background-color: #002f6c;
+    color: #FABD00;
+}
+
+.national-colors th {
+    background:#002f6c;color:#ffffff;
+}
+.national-colors tr:nth-child(even) td {
+    border-bottom:2px solid lightblue;
+    background-color: rgb(250, 189, 0);
+    background-color: rgba(250, 189, 0, 0.1);
+} 
+.national-colors tr:nth-child(odd) 
+{
+    background-color: #002f6c;
+    color: #FABD00;
+}
+
+.bookingbutton{
+color: #ffffff;
+border: 1px solid #ccc;
+border-radius:5px;
+background-color:#002f6c;;
+box-shadow: 3px 3px 4px #002f6c;;
+}
+a.bookingbutton {background:#002f6c;color: #ffffff;}
+.bookingbutton a {background:#002f6c;color: #ffffff;}
+.bookingbutton:HOVER {background-color: #ffffff;  color:#002f6c;} 
+
+.tOfContents td a:HOVER{color:#ffffff;background:#002f6c;}
+.tOfContents caption:HOVER 
+{background: #002f6c;color:#ffffff;}

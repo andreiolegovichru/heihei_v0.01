@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block keywords %}
+    Сайт о жизни в Финляндии, сайт о путешествиях в Финляндию,
+    сайт о путешествиях через Финляндию, сайт о жизни заграницей
+{% endblock %}
+{% block description %}
+    Путешествия в Финляндию. Жизнь в Финляндии. Путешествия через Финляндию
+{% endblock %}
+{% block content %}
+{{top_menu_macro('ru')}}
+<div class="wrapper m-top5rem">
+    <h1>Лучшие статьи 2020</h1>
+    <div class="banner-couple">
+    {{show_cards(cards)}}
+    </div>
+</div>
+
+{% endblock %}
